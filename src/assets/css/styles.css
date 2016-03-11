@@ -1,0 +1,209 @@
+/* basic page styles */
+*, *:before, *:after {
+  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: arial, helvetica, free-sans, sans-serif;
+	font-size: 1em;
+	background-color: #ddd;
+	color: #333;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	font-size: 1.6em;
+	margin: 2rem 0 0.2rem 0;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+.pagelist {
+	list-style-type: none;
+}
+
+.pagelist li {
+	margin-bottom: 1.5em;
+}
+
+.pagelist h2, .pagelist p {
+	margin: 0;
+}
+
+.pagelist p {
+	color: #333;
+}
+
+.pagelist p.articleinfo {
+	float: right;
+	font-size: 0.85em;
+	color: #777;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #00c;
+}
+
+a:hover, a:active {
+	color: #c00;
+}
+
+/* layout */
+.content {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+main {
+	clear: both;
+	background-color: #eee;
+	overflow: auto;
+}
+
+article {
+	padding: 1rem 0.2rem;
+}
+
+header, footer {
+	clear: both;
+	width: 100%;
+	overflow: auto;
+	background-color: #ddd;
+}
+
+footer {
+	font-size: 0.85em;
+	padding: 1em;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+.logo {
+	font-size: 1.5em;
+	padding: 0.2rem;
+	margin: 0;
+}
+
+.logo a {
+	color: #999;
+}
+
+/* navigation */
+.nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.nav li {
+	flex: 1 1 100%;
+}
+
+.nav a, .nav strong {
+	display: block;
+	text-align: center;
+	white-space: nowrap;
+	padding: 0.5em 0;
+}
+
+.nav.main a {
+	color: #222;
+}
+
+.nav a.active, .nav strong {
+	background-color: #eee;
+}
+
+@media (min-width: 16em) {
+
+	.nav li {
+		flex: 1 1 50%;
+	}
+
+}
+
+@media (min-width: 32em) {
+
+	header {
+		position: fixed;
+		top: 0;
+	}
+
+	main {
+		padding: 3em 0 2em 0;
+	}
+
+	.subpages article {
+		float: left;
+		width: 65%;
+	}
+
+	.subpages .nav.sub {
+		float: right;
+		width: 25%;
+		margin-top: 1em;
+	}
+
+	.nav.sub ul {
+		flex-direction: column;
+		border-top: 1px dotted #ccc;
+	}
+
+	.nav.sub li {
+		border-bottom: 1px dotted #ccc;
+	}
+
+	.nav.sub a, .nav.sub strong {
+		text-align: left;
+		padding-left: 0.75em;
+	}
+
+	.nav.page a {
+		text-align: left;
+	}
+
+	.nav.page a.next {
+		text-align: right;
+	}
+
+	.logo {
+		float: left;
+	}
+
+	.nav li {
+		flex: 1 1 auto;
+	}
+
+	.nav.main {
+		float: right;
+	}
+
+	.nav.main li {
+		width: 6em;
+	}
+
+}
