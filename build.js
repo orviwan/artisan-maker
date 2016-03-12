@@ -10,7 +10,7 @@ Build production site with `npm run production`
 
 var
 	// defaults
-	consoleLog = false,
+	consoleLog = false, // set true for metalsmith file and meta content logging
 	devBuild = ((process.env.NODE_ENV || '').trim().toLowerCase() !== 'production'),
 	pkg = require('./package.json'),
 
@@ -31,10 +31,10 @@ var
 	permalinks	= require('metalsmith-permalinks'),
 	inplace			= require('metalsmith-in-place'),
 	layouts			= require('metalsmith-layouts'),
-	htmlmin			= require('metalsmith-html-minifier'),
 	sitemap			= require('metalsmith-mapsite'),
 	rssfeed			= require('metalsmith-feed'),
 	assets			= require('metalsmith-assets'),
+	htmlmin			= devBuild ? null : require('metalsmith-html-minifier'),
 	browsersync	= devBuild ? require('metalsmith-browser-sync') : null,
 
 	// custom plugins
@@ -106,21 +106,12 @@ var ms = metalsmith(dir.base)
 	.use(inplace(templateConfig))						// in-page templating
 	.use(layouts(templateConfig));					// layout templating
 
-if (devBuild) {
-
-	// development build options
-	if (debug) ms.use(debug());							// output page debugging information
-
-	if (browsersync) ms.use(browsersync({		// start test server
-		server:				dir.dest,
-		files:				[dir.source + '**/*']
-	}));
-
-}
-else {
-	// production build options
-	ms.use(htmlmin());											// minify production HTML
-}
+if (htmlmin) ms.use(htmlmin());						// minify production HTML
+if (debug) ms.use(debug());								// output page debugging information
+if (browsersync) ms.use(browsersync({			// start test server
+	server:				dir.dest,
+	files:				[dir.source + '**/*']
+}));
 
 ms
 	.use(sitemap({													// generate sitemap.xml

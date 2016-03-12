@@ -38,12 +38,28 @@ p {
 	margin: 0 0 1em 0;
 }
 
+ul, ol {
+	margin: 1em 0 1.5em 3em;
+}
+
+li {
+	margin: 0 0 0.75em 0;
+}
+
+img {
+	float: right;
+	width: auto;
+	height: auto;
+	max-width: 50%;
+	margin: 0 0 1em 1em;
+}
+
 .pagelist {
 	list-style-type: none;
 }
 
 .pagelist li {
-	margin-bottom: 1.5em;
+	margin: 0 0 1.5em 0;
 }
 
 .pagelist h2, .pagelist p {
@@ -56,7 +72,7 @@ p {
 
 .pagelist p.articleinfo {
 	float: right;
-	font-size: 0.85em;
+	font-size: 0.8em;
 	color: #777;
 }
 
@@ -117,10 +133,12 @@ footer p {
 	display: flex;
 	flex-wrap: wrap;
 	list-style-type: none;
+	margin: 0;
 }
 
 .nav li {
 	flex: 1 1 100%;
+	margin: 0;
 }
 
 .nav a, .nav strong {
@@ -153,19 +171,37 @@ footer p {
 		top: 0;
 	}
 
+	.logo {
+		float: left;
+	}
+
+	.nav.main {
+		float: right;
+	}
+
+	.nav li {
+		flex: 1 1 auto;
+	}
+
+	.nav.main li {
+		width: 6em;
+	}
+
 	main {
 		padding: 3em 0 2em 0;
 	}
 
+	.subpages .content {
+		display: flex;
+	}
+
 	.subpages article {
-		float: left;
-		width: 65%;
+		flex: 1 1 70%;
 	}
 
 	.subpages .nav.sub {
-		float: right;
-		width: 25%;
-		margin-top: 1em;
+		flex: 1 1 30%;
+		margin: 0 0.2rem 0 2rem;
 	}
 
 	.nav.sub ul {
@@ -188,22 +224,6 @@ footer p {
 
 	.nav.page a.next {
 		text-align: right;
-	}
-
-	.logo {
-		float: left;
-	}
-
-	.nav li {
-		flex: 1 1 auto;
-	}
-
-	.nav.main {
-		float: right;
-	}
-
-	.nav.main li {
-		width: 6em;
 	}
 
 }
