@@ -1,5 +1,6 @@
 ---
 title: Draft article
+description: An unpublished article.
 publish: draft
 ---
 

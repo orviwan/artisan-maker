@@ -1,5 +1,6 @@
 ---
 title: Usage options
+description: What type of project could benefit from Metalsmith?
 date: 2016-03-14
 ---
 

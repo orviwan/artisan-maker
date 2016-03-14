@@ -1,5 +1,6 @@
 ---
 title: Gulp
+description: Do you need Gulp? How can it be integrated with Metalsmith workflows?
 publish: 2016-03-02
 ---
 

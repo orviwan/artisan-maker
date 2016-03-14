@@ -1,7 +1,7 @@
 # metalsmith-demo
 A demonstration site created using the Node.js Metalsmith static site generator.
 
-[Preview the built site...](https://rawgit.com/craigbuckler/metalsmith-demo/master/build/index.html)
+[Preview the built site...](https://rawgit.com/craigbuckler/metalsmith-demo/master/build/)
 
 
 ## About this code

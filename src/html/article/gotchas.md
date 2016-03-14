@@ -1,5 +1,6 @@
 ---
 title: Gotchas
+description: Some issues and workarounds when using Metalsmith to build a static site.
 date: 2016-03-10
 ---
 
