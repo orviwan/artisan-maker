@@ -50,7 +50,7 @@ var
 		author:		'Craig Buckler',
 		contact:	'https://twitter.com/craigbuckler',
 		domain:		devBuild ? 'http://127.0.0.1' : 'https://rawgit.com',						// set domain
-		rootpath:	devBuild ? null	: '/craigbuckler/metalsmith-demo/master/build'	// set absolute path (null for relative)
+		rootpath:	devBuild ? null	: '/craigbuckler/metalsmith-demo/master/build/'	// set absolute path (null for relative)
 	},
 
 	templateConfig = {
