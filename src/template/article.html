@@ -34,11 +34,11 @@
 					<ul>
 
 					{{#if next.title }}
-						<li><a href="/{{ next.path }}/" class="next">&laquo; back:{{ next.title }}</a></li></p>
+						<li><a href="{{ root }}{{ next.path }}/" class="next">&laquo; back:{{ next.title }}</a></li></p>
 					{{/if}}
 
 					{{#if previous.title }}
-						<li><a href="/{{ previous.path }}/" class="back">next: {{ previous.title }} &raquo;</a></li></p>
+						<li><a href="{{ root }}{{ previous.path }}/" class="back">next: {{ previous.title }} &raquo;</a></li></p>
 					{{/if}}
 
 					</ul>
