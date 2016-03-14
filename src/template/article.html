@@ -33,12 +33,12 @@
 				<nav class="nav page">
 					<ul>
 
-					{{#if next.title }}
-						<li><a href="{{ root }}{{ next.path }}/" class="next">&laquo; back:{{ next.title }}</a></li></p>
+					{{#if previous.title }}
+						<li><a href="{{ root }}{{ previous.path }}/" class="back">&laquo; back: {{ previous.title }}</a></li></p>
 					{{/if}}
 
-					{{#if previous.title }}
-						<li><a href="{{ root }}{{ previous.path }}/" class="back">next: {{ previous.title }} &raquo;</a></li></p>
+					{{#if next.title }}
+						<li><a href="{{ root }}{{ next.path }}/" class="next">next: {{ next.title }} &raquo;</a></li></p>
 					{{/if}}
 
 					</ul>
