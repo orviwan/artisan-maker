@@ -18,7 +18,7 @@
 			{{#if isPage}}
 			{{else}}
 
-				<p class="articleinfo">Published {{ dateFormat }}, {{ wordCount }} words, {{ readingTime }} minutes to read</p>
+				<p class="articleinfo">Published {{ dateFormat }}, {{ wordCount }} words, {{ readingTime }}-minute read</p>
 
 			{{/if}}
 
@@ -33,12 +33,12 @@
 				<nav class="nav page">
 					<ul>
 
-					{{#if previous.title }}
-						<li><a href="/{{ previous.path }}/" class="back">&laquo; back: {{ previous.title }}</a></li></p>
+					{{#if next.title }}
+						<li><a href="/{{ next.path }}/" class="next">&laquo; back:{{ next.title }}</a></li></p>
 					{{/if}}
 
-					{{#if next.title }}
-						<li><a href="/{{ next.path }}/" class="next">next: {{ next.title }} &raquo;</a></li></p>
+					{{#if previous.title }}
+						<li><a href="/{{ previous.path }}/" class="back">next: {{ previous.title }} &raquo;</a></li></p>
 					{{/if}}
 
 					</ul>

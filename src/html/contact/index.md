@@ -1,9 +1,8 @@
 ---
 title: Contact
-layout: page.html
 priority: 0.7
 ---
 
-Please contact me! I'm so cooel.
+Any questions?
 
-The `layout` meta added for this page is unnecessary but shown for an example.
+Contact me at Twitter &ndash; [{{ contact }}]({{ contact }}) &ndash; or use the [SitePoint forums](https://www.sitepoint.com/community/)

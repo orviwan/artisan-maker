@@ -49,8 +49,8 @@ var
 		desc:			'A demonstration static site built using Metalsmith',
 		author:		'Craig Buckler',
 		contact:	'https://twitter.com/craigbuckler',
-		domain:		devBuild ? 'http://127.0.0.1' : 'http://site.com',	// set domain
-		rootpath:	devBuild ? null : '/absolute-path/'									// set absolute path (null for relative)
+		domain:		devBuild ? 'http://127.0.0.1' : 'https://rawgit.com',						// set domain
+		rootpath:	devBuild ? null	: '/craigbuckler/metalsmith-demo/master/build'	// set absolute path (null for relative)
 	},
 
 	templateConfig = {
@@ -77,21 +77,21 @@ var ms = metalsmith(dir.base)
 			reverse:		true,
 			refer:			false
 		},
+		start: {
+			pattern:		'start/**/*',
+			sortBy:			'priority',
+			reverse:		true,
+			refer:			true,
+			metadata: {
+				layout:		'article.html'
+			}
+		},
 		article: {
 			pattern:		'article/**/*',
 			sortBy:			'date',
 			reverse:		true,
 			refer:			true,
 			limit:			50,
-			metadata: {
-				layout:		'article.html'
-			}
-		},
-		basics: {
-			pattern:		'basics/**/*',
-			sortBy:			'priority',
-			reverse:		true,
-			refer:			true,
 			metadata: {
 				layout:		'article.html'
 			}
@@ -107,7 +107,9 @@ var ms = metalsmith(dir.base)
 	.use(layouts(templateConfig));					// layout templating
 
 if (htmlmin) ms.use(htmlmin());						// minify production HTML
+
 if (debug) ms.use(debug());								// output page debugging information
+
 if (browsersync) ms.use(browsersync({			// start test server
 	server:				dir.dest,
 	files:				[dir.source + '**/*']

@@ -14,11 +14,9 @@ This is a demonstration rather than a recommended way to build a static site. Yo
 Metalsmith could be used to create:
 
 * a fast static website with minimal server-side requirements
-
 * technical documentation
-
 * an eBook
-
 * application prototypes
-
 * build tools or project scaffolding
+
+[Get started&hellip;]({{ root }}/start/)
