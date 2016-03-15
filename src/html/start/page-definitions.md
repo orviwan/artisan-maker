@@ -24,8 +24,8 @@ All items are optional. Note:
 * `publish` can be set `draft` or a future date to ensure it is not published until required.
 * `date` is the date of the article. If not set, a future `publish` date or the file creation date is used.
 
-The page content is defined in markdown or HTML syntax below the front-matter section. The content can include [Handlebars](http://handlebarsjs.com/) partials from the `src/partials` folder with the code in double-squiggly brackets:
+The page content is defined in markdown or HTML syntax below the front-matter section. The content can include [Handlebars](http://handlebarsjs.com/) partials from the `src/partials` folder:
 
-	> partialname
+	\{{> partialname }}
 
 where `partialname` is the partial filename without its `.html` extension.
