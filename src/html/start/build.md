@@ -15,3 +15,5 @@ To build the site for production and compress HTML files:
 	npm run production
 
 The site is built in the `/build` folder.
+
+Note you may want to change the `siteMeta.domain` and `siteMeta.rootpath` on lines 52 and 53 of `./build.js`.

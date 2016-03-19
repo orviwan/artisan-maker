@@ -12,5 +12,5 @@
 <url> <loc>https://rawgit.com/start/installation/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://rawgit.com/start/page-definitions/</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://rawgit.com/start/plugins/</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://rawgit.com/start/sitefiles/</loc> <changefreq>weekly</changefreq> <priority>0.4</priority> </url>
+<url> <loc>https://rawgit.com/start/site-files/</loc> <changefreq>weekly</changefreq> <priority>0.4</priority> </url>
 </urlset>

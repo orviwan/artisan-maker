@@ -9,5 +9,5 @@ The `build.js` file defines how the site is built using Metalsmith and various p
 Several custom plugins have been created specifically for this site:
 
 * `lib/metalsmith-debug.js`: output debugging information to the console.
-* `lib/metalsmith-setdate.js`: ensure each page has a date. If `date` front-matter is not available, the page date is presumed to be the publish or file creation date.
+* `lib/metalsmith-setdate.js`: ensure each page has a date. If a `date` is not defined in the page's front-matter, it is presumed to be the publish or file creation date.
 * `lib/metalsmith-moremeta.js`: applies further metadata to each page including the root folder, a default layout, primary and secondary navigation.
