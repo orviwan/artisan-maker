@@ -117,12 +117,12 @@ if (browsersync) ms.use(browsersync({			// start test server
 
 ms
 	.use(sitemap({													// generate sitemap.xml
-		hostname:			siteMeta.domain,
+		hostname:			siteMeta.domain + (siteMeta.rootpath || ''),
 		omitIndex:		true
 	}))
 	.use(rssfeed({													// generate RSS feed for articles
 		collection:		'article',
-		site_url:			siteMeta.domain,
+		site_url:			siteMeta.domain + (siteMeta.rootpath || ''),
 		title:				siteMeta.name,
 		description: 	siteMeta.desc
 	}))
