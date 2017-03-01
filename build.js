@@ -33,6 +33,7 @@ var
   layouts = require('metalsmith-layouts'),
   sitemap = require('metalsmith-mapsite'),
   rssfeed = require('metalsmith-feed'),
+  sass = require('metalsmith-sass'),
   assets = require('metalsmith-assets'),
   htmlmin = devBuild ? null : require('metalsmith-html-minifier'),
   browsersync = devBuild ? require('metalsmith-browser-sync') : null,
@@ -45,19 +46,20 @@ var
   siteMeta = {
     devBuild: devBuild,
     version: pkg.version,
-    name: 'Static site',
+    name: 'Artisan Maker',
     desc: 'A demonstration static site built using Metalsmith',
-    author: 'Craig Buckler',
-    contact: 'https://twitter.com/craigbuckler',
+    author: 'Jon Barlow',
+    contact: 'https://twitter.com/orviwan',
     domain: devBuild ? 'http://127.0.0.1' : 'https://rawgit.com', // set domain
-    rootpath: devBuild ? null : '/craigbuckler/metalsmith-demo/master/build/' // set absolute path (null for relative)
+    rootpath: devBuild ? null : '/' // set absolute path (null for relative)
   },
 
   templateConfig = {
     engine: 'handlebars',
     directory: dir.source + 'template/',
     partials: dir.source + 'partials/',
-    default: 'page.html'
+    default: 'page.html',
+    pattern: ['**/*.html', '**/*.md']
   };
 
 console.log((devBuild ? 'Development' : 'Production'), 'build, version', pkg.version);
@@ -94,6 +96,15 @@ var ms = metalsmith(dir.base)
       metadata: {
         layout: 'article.html'
       }
+    },
+    product: {
+      pattern: 'product/**/*',
+      sortBy: 'priority',
+      reverse: false,
+      refer: true,
+      metadata: {
+        layout: 'product.html'
+      }
     }
   }))
   .use(markdown()) // convert markdown
@@ -105,32 +116,58 @@ var ms = metalsmith(dir.base)
   })) // word count
   .use(moremeta()) // determine root paths and navigation
   .use(inplace(templateConfig)) // in-page templating
-  .use(layouts(templateConfig)); // layout templating
-
-if (htmlmin) ms.use(htmlmin()); // minify production HTML
-
-if (debug) ms.use(debug()); // output page debugging information
-
-if (browsersync) ms.use(browsersync({ // start test server
-  server: dir.dest,
-  files: [dir.source + '**/*']
-}));
-
-ms
-  .use(sitemap({ // generate sitemap.xml
+  .use(layouts(templateConfig)) // layout templating
+  // SITEMAP XML
+  .use(sitemap({
     hostname: siteMeta.domain + (siteMeta.rootpath || ''),
     omitIndex: true
   }))
-  .use(rssfeed({ // generate RSS feed for articles
+  // ARTICLES RSS
+  .use(rssfeed({
     collection: 'article',
     site_url: siteMeta.domain + (siteMeta.rootpath || ''),
     title: siteMeta.name,
     description: siteMeta.desc
   }))
-  .use(assets({ // copy assets: CSS, images etc.
-    source: dir.source + 'assets/',
-    destination: './'
-  }))
-  .build(function(err) { // build
-    if (err) throw err;
-  });
+  // IMAGES
+  .use(assets({
+    source: dir.source + 'html/_assets/images/',
+    destination: '../build/images/'
+  }));
+
+// SASS
+if (devBuild) {
+  ms.use(sass({
+    outputStyle: 'expanded',
+    outputDir: './css/',
+    sourceMap: true,
+    sourceMapContents: true
+  }));
+} else {
+  ms.use(sass({
+    outputStyle: 'compressed',
+    outputDir: './css/'
+  }));
+}
+
+// MINIFY HTML
+if (htmlmin) ms.use(htmlmin());
+
+// DEBUG LOG
+if (debug) ms.use(debug()); // output page debugging information
+
+// BROWSERSYNC
+if (browsersync) {
+  ms.use(browsersync(
+    { // start test server
+      server: dir.dest,
+      files: [dir.source + '**/*']
+    })
+  );
+}
+
+// BUILD
+ms.build(function(err) {
+  if (err) throw err;
+});
+

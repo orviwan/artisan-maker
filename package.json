@@ -1,20 +1,12 @@
 {
-  "name": "metalsmith-demo",
+  "name": "artisan-maker",
   "version": "1.0.0",
-  "description": "A demonstration site created using the Node.js Metalsmith static site generator",
-  "homepage": "https://github.com/craigbuckler/metalsmith-demo#readme",
+  "description": "A website for my father-in-law",
   "main": "build.js",
   "scripts": {
     "start": "node ./build.js",
     "production": "NODE_ENV=production node ./build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/craigbuckler/metalsmith-demo.git"
-  },
-  "bugs": {
-    "url": "https://github.com/craigbuckler/metalsmith-demo/issues"
   },
   "keywords": [
     "node.js",
@@ -23,7 +15,7 @@
     "static",
     "website"
   ],
-  "author": "Craig Buckler",
+  "author": "Jon Barlow",
   "license": "MIT",
   "devDependencies": {
     "handlebars": "^4.0.5",
@@ -31,6 +23,7 @@
     "metalsmith-assets": "^0.1.0",
     "metalsmith-browser-sync": "^1.1.0",
     "metalsmith-collections": "^0.7.0",
+    "metalsmith-concat": "^6.0.0",
     "metalsmith-feed": "^0.2.0",
     "metalsmith-html-minifier": "^2.0.0",
     "metalsmith-in-place": "^1.4.3",
@@ -39,6 +32,7 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-publish": "^0.1.3",
+    "metalsmith-sass": "^1.4.0",
     "metalsmith-word-count": "0.0.4"
   }
 }

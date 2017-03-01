@@ -1,14 +1,6 @@
-# Metalsmith Demo 
+# Artisan Maker Website
 
-A demonstration site created using the Node.js Metalsmith static site generator.
-
-[Preview the built site...](https://rawgit.com/sitepoint-editors/metalsmith-demo/master/build/)
-
-[Read the tutorial on SitePoint](http://www.sitepoint.com/create-static-site-metalsmith).
-
-## About this code
-
-This code builds a basic HTML-only site using [Metalsmith](http://www.metalsmith.io/), a Node.js simple, pluggable static site generator. It is a demonstration rather than build recommendations which will be different for every site. Please use any part of the code as you wish.
+For my father-in-law.
 
 ## Installation
 
