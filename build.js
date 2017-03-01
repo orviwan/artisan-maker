@@ -35,6 +35,7 @@ var
   rssfeed = require('metalsmith-feed'),
   sass = require('metalsmith-sass'),
   assets = require('metalsmith-assets'),
+  moveRemove = require('metalsmith-move-remove'),
   htmlmin = devBuild ? null : require('metalsmith-html-minifier'),
   browsersync = devBuild ? require('metalsmith-browser-sync') : null,
 
@@ -149,6 +150,10 @@ if (devBuild) {
     outputDir: './css/'
   }));
 }
+
+ms.use(moveRemove({
+  remove: ['_assets']
+}))
 
 // MINIFY HTML
 if (htmlmin) ms.use(htmlmin());
