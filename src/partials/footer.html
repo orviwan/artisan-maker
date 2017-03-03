@@ -1,7 +1,17 @@
-<footer>
-
-	<p>By <a href="{{ contact }}">{{ author }}</a> and featured on <a href="http://www.sitepoint.com/">SitePoint.com</a></p>
-
-	<p class="siteinfo">{{#if devBuild}}Development{{else}}Production{{/if}} build, version {{ version }}, {{ template }} template</p>
-
+<footer class="row">
+  <div class="large-12 columns">
+    <ul class="vertical medium-horizontal menu">
+      <li><a href="{{ contact }}">{{ author }}</a></li>
+      <li><a href="#0">Item 2</a></li>
+      <li><a href="#0">Item 3</a></li>
+    </ul>
+  </div>
+  <div class="large-12 columns">
+    <p>{{#if devBuild}}Development{{else}}Production{{/if}} build, version {{ version }}, {{ template }} template</p>
+  </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>

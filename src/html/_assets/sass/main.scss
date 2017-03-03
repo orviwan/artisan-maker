@@ -1,16 +1,2 @@
-@import "vendor/meyer-reset";
-
-// Modules and Variables
-@import "partials/base";
-
-// Partials
-// @import "partials/typography";
-// @import "partials/buttons";
-// @import "partials/figures";
-// @import "partials/grids";
-// ...
-
-// Third-party
-@import "vendor/demo";
-// @import "vendor/jquery.ui.core";
-
+@import "foundation/foundation";
+@include foundation-everything;

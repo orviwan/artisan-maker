@@ -1,33 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-{{> meta }}
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> meta }}
+  </head>
+  <body>
 
-{{> header }}
+  {{> header }}
+<!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <iframe frameborder="0" height="100%" width="100%" 
+    src="https://youtube.com/embed/gOIusx-9DHs?autoplay=1&controls=0&showinfo=0&autohide=1">
+  </iframe>
+</div>
+ -->
+  <main{{#if navsub}} class="subpages"{{/if}} class="row">
 
-<main{{#if navsub}} class="subpages"{{/if}}>
+    {{#if hero}}
+      <div class="large-12 columns collapse">
+      {{> hero-panel section=hero }}
+      </div>
+    {{/if}}
 
-	<div class="content">
+  	<div class="large-12 columns">
 
-		<article>
+  		<article>
 
-			{{#if title}}
-				<h1>{{ title }}</h1>
-			{{/if}}
+  			{{#if title}}
+  				<h1>{{ title }}</h1>
+  			{{/if}}
 
-			{{{ contents }}}
+  			{{{ contents }}}
 
-		</article>
+  		</article>
 
-		{{> navsub }}
+  		{{> navsub }}
 
-	</div>
+  	</div>
 
-</main>
+  </main>
 
-{{> footer template='page' }}
+  {{> footer template='page' }}
 
-</body>
+  </body>
 </html>

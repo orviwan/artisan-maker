@@ -38,11 +38,13 @@ var
   moveRemove = require('metalsmith-move-remove'),
   htmlmin = devBuild ? null : require('metalsmith-html-minifier'),
   browsersync = devBuild ? require('metalsmith-browser-sync') : null,
+  helpers = require('metalsmith-register-helpers'),
 
   // custom plugins
   setdate = require(dir.lib + 'metalsmith-setdate'),
   moremeta = require(dir.lib + 'metalsmith-moremeta'),
   debug = consoleLog ? require(dir.lib + 'metalsmith-debug') : null,
+  collectionsclean = require(dir.lib + 'metalsmith-collections-clean'),
 
   siteMeta = {
     devBuild: devBuild,
@@ -66,12 +68,13 @@ var
 console.log((devBuild ? 'Development' : 'Production'), 'build, version', pkg.version);
 
 var ms = metalsmith(dir.base)
-  .clean(!devBuild) // clean folder before a production build
+  .clean(true) // clean folder before a production build (!devBuild)
   .source(dir.source + 'html/') // source folder (src/html/)
   .destination(dir.dest) // build folder (build/)
   .metadata(siteMeta) // add meta data to every page
   .use(publish()) // draft, private, future-dated
   .use(setdate()) // set date on every page if not set in front-matter
+  .use(collectionsclean())
   .use(collections({ // determine page collection/taxonomy
     page: {
       pattern: '**/index.*',
@@ -116,6 +119,9 @@ var ms = metalsmith(dir.base)
     raw: true
   })) // word count
   .use(moremeta()) // determine root paths and navigation
+  .use(helpers({
+    "directory": "lib/_helpers"
+  }))
   .use(inplace(templateConfig)) // in-page templating
   .use(layouts(templateConfig)) // layout templating
   // SITEMAP XML
