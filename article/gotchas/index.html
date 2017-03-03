@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Gotchas - Artisan Maker</title>
-<meta name="description" content="Issues and workarounds when using Metalsmith." />
+  <meta charset="utf-8" />
+  <title>Gotchas - Artisan Maker</title>
+  <meta name="description" content="Issues and workarounds when using Metalsmith." />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="mobile-web-app-capable" content="yes" />
 
-<meta name="HandheldFriendly" content="true">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="mobile-web-app-capable" content="yes">
-
-<link rel="stylesheet" media="all" href="../../css/main.css" />
+  <link rel="stylesheet" media="all" href="../../css/main.css" />
 </head>
 <body>
 
-<header>
-
-	<div class="content">
-
-		<p class="logo"><a href="../../">Artisan Maker</a></p>
-		<!-- main navigation -->
-		<nav class="nav main">
-			<ul>
-				<li>
-					<a href="../../">Home</a>
-				</li>
-				<li>
-					<a href="../../start/">Start</a>
-				</li>
-				<li>
-					<a href="../../product/">Products</a>
-				</li>
-				<li>
-					<a href="../../article/" class="active">Articles</a>
-				</li>
-				<li>
-					<a href="../../contact/">Contact</a>
-				</li>
-			</ul>
-		</nav>
-
-	</div>
-
+<header class="expanded row collapse">
+  <div class="large-12 columns">
+    <!-- main navigation -->
+    <div class="top-bar" id="menu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Artisan Maker</li>
+            <li>
+              <a href="../../">Artisan Maker Devon</a>
+            </li>
+            <li>
+              <a href="../../start/">Start</a>
+            </li>
+            <li>
+              <a href="../../product/">Products</a>
+            </li>
+            <li>
+              <a href="../../article/" class="active">Articles</a>
+            </li>
+            <li>
+              <a href="../../contact/">Contact</a>
+            </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main class="subpages">
@@ -108,13 +112,23 @@
 
 </main>
 
-<footer>
-
-	<p>By <a href="https://twitter.com/orviwan">Jon Barlow</a> and featured on <a href="http://www.sitepoint.com/">SitePoint.com</a></p>
-
-	<p class="siteinfo">Development build, version 1.0.0, article template</p>
-
+<footer class="row">
+  <div class="large-12 columns">
+    <ul class="vertical medium-horizontal menu">
+      <li><a href="https://twitter.com/orviwan">Jon Barlow</a></li>
+      <li><a href="#0">Item 2</a></li>
+      <li><a href="#0">Item 3</a></li>
+    </ul>
+  </div>
+  <div class="large-12 columns">
+    <p>Development build, version 1.0.0, article template</p>
+  </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
 
 </body>
 </html>
