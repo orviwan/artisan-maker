@@ -11,52 +11,51 @@
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <meta name="mobile-web-app-capable" content="yes" />
+      <link rel="icon" type="image/png" href="/images/icon16.png" sizes="16x16" />
+      <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
     
+      <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
       <link rel="stylesheet" media="all" href="../css/main.css" />
   </head>
-  <body>
+  <body class="">
 
   <header class="expanded row collapse">
-    <div class="large-12 columns">
-      <!-- main navigation -->
-      <div class="top-bar" id="menu">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">Artisan Maker</li>
-              <li>
-                <a href="../">Artisan Maker Devon</a>
-              </li>
-              <li>
-                <a href="../start/">Start</a>
-              </li>
-              <li>
-                <a href="../product/">Products</a>
-              </li>
-              <li>
-                <a href="../article/">Articles</a>
-              </li>
-              <li>
-                <a href="../contact/" class="active">Contact</a>
-              </li>
-          </ul>
+    <div class="row">
+      <div id="logo">
+        <img src="/images/logo.png" alt="Artisan Maker" />
+      </div>
+      <div class="large-12 columns">
+        <!-- main navigation -->
+        <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle="menu"></button>
+          <div class="title-bar-title">Menu</div>
         </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
+        
+        <div  id="menu">
+        
+                  <a href="../">Home</a>
+        
+        
+                  <a href="../about/">About</a>
+        
+        
+                  <a href="../product/">Products</a>
+        
+        
+                  <a href="../blog/">Blog</a>
+        
+        
+                  <a href="../contact/" class="active">Contact</a>
+        
+        
         </div>
+        
       </div>
     </div>
   </header>
-<!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-  <iframe frameborder="0" height="100%" width="100%" 
-    src="https://youtube.com/embed/gOIusx-9DHs?autoplay=1&controls=0&showinfo=0&autohide=1">
-  </iframe>
-</div>
- -->
-  <main class="row">
 
+
+  <main class=" row">
 
   	<div class="large-12 columns">
 
@@ -64,8 +63,24 @@
 
   				<h1>Contact</h1>
 
-  			<p>Any questions?</p>
-<p>Contact me at <a href="https://twitter.com/orviwan">Twitter @orviwan</a>.</p>
+  			<p>If you have any questions or feedback, please use the contact form below.</p>
+<form action="https://formspree.io/orviwan@gmail.com" method="POST" class="clearfix">
+  <label>Your Name
+    <input type="text" name="name" />
+  </label>
+  <label>Your Email
+    <input type="email" name="_replyto" />
+  </label>
+  <label>Message
+    <textarea name="message" rows="8"></textarea>
+  </label>
+  <input type="hidden" name="_next" value="/contact/thanks/" />
+  <input type="hidden" name="_subject" value="Artisan Maker Enquiry" />
+  <input type="hidden" name="_cc" value="orviwan@gmail.com" />
+  <input type="submit" value="Contact me!" class="button float-right" />
+  <input type="text" name="_gotcha" style="display:none" />
+
+</form>
 
 
   		</article>
@@ -75,18 +90,27 @@
 
   </main>
 
-  <footer class="row">
-    <div class="large-12 columns">
-      <ul class="vertical medium-horizontal menu">
-        <li><a href="https://twitter.com/orviwan">Jon Barlow</a></li>
-        <li><a href="#0">Item 2</a></li>
-        <li><a href="#0">Item 3</a></li>
-      </ul>
+  <footer class="clearfix">
+    <div class="row expanded row-footer01">
+      <div class="row">
+        <div class="large-12 columns">
+            <ul class="vertical medium-horizontal menu">
+              <li><a href="https://twitter.com/orviwan">Jon Barlow</a></li>
+              <li><a href="#0">Item 2</a></li>
+              <li><a href="#0">Item 3</a></li>
+            </ul>
+          </div>
+      </div>
     </div>
-    <div class="large-12 columns">
-      <p>Development build, version 1.0.0, page template</p>
+    <div class="row expanded row-footer02">
+      <div class="row">
+        <div class="large-12 columns">
+          <p>Copyright 2017. Artisan Maker, Devon.</p>
+        </div>
+      </div>
     </div>
   </footer>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
   <script>
@@ -94,4 +118,5 @@
   </script>
 
   </body>
+
 </html>
