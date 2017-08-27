@@ -1,19 +1,15 @@
 <!-- main navigation -->
-<div class="top-bar" id="menu">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">Artisan Maker</li>
-      {{#each navmain}}
-        <li>
-          <a href="{{path}}"{{#if active}} class="active"{{/if}}>{{title}}</a>
-        </li>
-      {{/each}}
-    </ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><input type="search" placeholder="Search"></li>
-      <li><button type="button" class="button">Search</button></li>
-    </ul>
-  </div>
+<div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle="menu"></button>
+  <div class="title-bar-title">Menu</div>
 </div>
+
+<div  id="menu">
+      {{#each navmain}}
+
+          <a href="{{path}}"{{#if active}} class="active"{{/if}}>{{menuTitle}}</a>
+
+      {{/each}}
+
+</div>
+

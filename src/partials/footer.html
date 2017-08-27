@@ -1,15 +1,24 @@
-<footer class="row">
-  <div class="large-12 columns">
-    <ul class="vertical medium-horizontal menu">
-      <li><a href="{{ contact }}">{{ author }}</a></li>
-      <li><a href="#0">Item 2</a></li>
-      <li><a href="#0">Item 3</a></li>
-    </ul>
+<footer class="clearfix">
+  <div class="row expanded row-footer01">
+    <div class="row">
+      <div class="large-12 columns">
+          <ul class="vertical medium-horizontal menu">
+            <li><a href="{{ contact }}">{{ author }}</a></li>
+            <li><a href="#0">Item 2</a></li>
+            <li><a href="#0">Item 3</a></li>
+          </ul>
+        </div>
+    </div>
   </div>
-  <div class="large-12 columns">
-    <p>{{#if devBuild}}Development{{else}}Production{{/if}} build, version {{ version }}, {{ template }} template</p>
+  <div class="row expanded row-footer02">
+    <div class="row">
+      <div class="large-12 columns">
+        <p>Copyright 2017. Artisan Maker, Devon.</p>
+      </div>
+    </div>
   </div>
 </footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
 <script>

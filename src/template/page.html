@@ -3,22 +3,15 @@
   <head>
     {{> meta }}
   </head>
-  <body>
+  <body class="{{hero}}">
 
   {{> header }}
-<!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-  <iframe frameborder="0" height="100%" width="100%" 
-    src="https://youtube.com/embed/gOIusx-9DHs?autoplay=1&controls=0&showinfo=0&autohide=1">
-  </iframe>
-</div>
- -->
-  <main{{#if navsub}} class="subpages"{{/if}} class="row">
 
-    {{#if hero}}
-      <div class="large-12 columns collapse">
-      {{> hero-panel section=hero }}
-      </div>
-    {{/if}}
+  {{#if hero}}
+    {{> hero-panel section=hero }}
+  {{/if}}
+
+  <main class="{{#if navsub}}subpages{{/if}} row">
 
   	<div class="large-12 columns">
 
@@ -41,4 +34,5 @@
   {{> footer template='page' }}
 
   </body>
+
 </html>

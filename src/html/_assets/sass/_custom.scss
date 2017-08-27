@@ -1,0 +1,159 @@
+
+/* Flash of incorrect menu */
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+body {
+  color: #323031;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a, a:hover, a:visited, a:active {
+  color: #DB3A34;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #323031;
+  font-family: 'Bitter', serif;
+  line-height: 1.1em;
+  margin: 1em 0 .5em 0;
+}
+h1 {
+  border-bottom: solid 1px #efefef;
+  color: #084C61;
+  margin-top: 1.5em;
+}
+
+article {
+  pre {
+    margin-bottom: 1em;
+  }
+  code {
+    background-color: #efefef;
+    border: 0;
+    display: block;
+    padding: 3px 5px;
+  }
+
+  ul, ol {
+    padding-left: 2em;
+  }
+}
+
+#logo {
+  margin: 10px auto;
+  text-align: center;
+  img {
+    max-width: 400px;
+  }
+}
+body.homepage #logo {
+  display: none;
+}
+
+
+header {
+  background-color: #fafafa;
+  border-bottom: solid 1px #f0f0f0;
+}
+#menu {
+
+  font-family: 'Bitter', serif;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin: 0;
+  a {
+  display: inline-block;
+  font-weight: bold;
+  color: #323031;
+  padding: 0 4px;
+  margin: 0 10px;
+  line-height: 2.2em;
+    &.active, &:hover {
+      border-bottom: #DB3A34 solid 2px;
+      color: #DB3A34;
+    }
+  }
+}
+
+.herobanner {
+  img {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+
+footer {
+  font-family: 'Bitter', serif;
+  .row-footer01 {
+    background-color: #323031;
+    padding: 80px 0;
+    font-size: 18px;
+  }
+  .row-footer02 {
+    background-color: #1F0A0A;
+    padding: 20px 0 0 0;
+    color: #fff;
+  }
+  a, a:hover, a:visited, a:active {
+    color: #FFC857;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+/* Sticky Footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body, html {
+  height: auto;
+}
+
+body {
+  margin-bottom: 6em;
+  display: block;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6em;
+}
+
+
+label {
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+}
+.button {
+  background-color: #DB3A34;
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+  border-radius: 10px;
+  border: #084C61 solid 1px;
+  &:hover {
+    background-color: #FFC857;
+    color: #DB3A34
+  }
+}

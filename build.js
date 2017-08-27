@@ -82,23 +82,14 @@ var ms = metalsmith(dir.base)
       reverse: true,
       refer: false
     },
-    start: {
-      pattern: 'start/**/*',
-      sortBy: 'priority',
-      reverse: true,
-      refer: true,
-      metadata: {
-        layout: 'article.html'
-      }
-    },
-    article: {
-      pattern: 'article/**/*',
+    blog: {
+      pattern: 'blog/**/*',
       sortBy: 'date',
       reverse: true,
       refer: true,
       limit: 50,
       metadata: {
-        layout: 'article.html'
+        layout: 'blog.html'
       }
     },
     product: {
@@ -129,9 +120,9 @@ var ms = metalsmith(dir.base)
     hostname: siteMeta.domain + (siteMeta.rootpath || ''),
     omitIndex: true
   }))
-  // ARTICLES RSS
+  // BLOG RSS
   .use(rssfeed({
-    collection: 'article',
+    collection: 'blog',
     site_url: siteMeta.domain + (siteMeta.rootpath || ''),
     title: siteMeta.name,
     description: siteMeta.desc

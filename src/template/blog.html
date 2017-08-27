@@ -7,19 +7,21 @@
 
 {{> header }}
 
+
 <main class="{{#if navsub}}subpages{{/if}} row">
-	
-	<div class="large-12 columns">
+
+  <div class="large-12 columns">
+
 		<div class="content">
 
 			<article>
 
-				<h1>PRODUCT {{ title }}</h1>
+				<h1>{{ title }}</h1>
 
 				{{#if isPage}}
 				{{else}}
 
-					<p class="info">Published {{ dateFormat }}, {{ wordCount }} words, {{ readingTime }}-minute read</p>
+					<p class="bloginfo">Published {{ dateFormat }}, {{ wordCount }} words, {{ readingTime }}-minute read</p>
 
 				{{/if}}
 
@@ -55,7 +57,7 @@
 	</div>
 </main>
 
-{{> footer template='product' }}
+{{> footer template='blog' }}
 
 </body>
 </html>
