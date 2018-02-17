@@ -53,7 +53,7 @@ var
     desc: 'A demonstration static site built using Metalsmith',
     author: 'Jon Barlow',
     contact: 'https://twitter.com/orviwan',
-    domain: devBuild ? 'http://127.0.0.1' : '', // set domain
+    domain: devBuild ? 'http://127.0.0.1' : 'https://orviwan.github.io/artisan-maker', // set domain
     rootpath: devBuild ? null : '' // set absolute path (null for relative)
   },
 
@@ -153,7 +153,7 @@ ms.use(moveRemove({
 }))
 
 // MINIFY HTML
-if (htmlmin) ms.use(htmlmin());
+//if (htmlmin) ms.use(htmlmin());
 
 // DEBUG LOG
 if (debug) ms.use(debug()); // output page debugging information
