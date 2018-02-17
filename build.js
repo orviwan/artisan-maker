@@ -54,7 +54,7 @@ var
     author: 'Jon Barlow',
     contact: 'https://twitter.com/orviwan',
     domain: devBuild ? 'http://127.0.0.1' : 'https://rawgit.com', // set domain
-    rootpath: devBuild ? null : '/' // set absolute path (null for relative)
+    rootpath: devBuild ? null : '' // set absolute path (null for relative)
   },
 
   templateConfig = {
