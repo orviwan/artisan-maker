@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 27 Aug 2017 22:29:31 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 17 Feb 2018 11:02:22 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -170,7 +170,7 @@
 
 </body>
 </html>
-]]></description><link>http://127.0.0.1/blog</link><guid isPermaLink="true">http://127.0.0.1/blog</guid><pubDate>Sun, 27 Aug 2017 21:44:29 GMT</pubDate></item><item><title><![CDATA[Usage options]]></title><description><![CDATA[<!DOCTYPE html>
+]]></description><link>http://127.0.0.1/blog</link><guid isPermaLink="true">http://127.0.0.1/blog</guid><pubDate>Wed, 27 Sep 2017 17:12:37 GMT</pubDate></item><item><title><![CDATA[Usage options]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
