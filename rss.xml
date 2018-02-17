@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>https://rawgit.com/</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 17 Feb 2018 14:17:21 GMT</lastBuildDate><atom:link href="https://rawgit.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>https://rawgit.com</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 17 Feb 2018 14:33:11 GMT</lastBuildDate><atom:link href="https://rawgit.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
   <title>Blog - Artisan Maker</title>
-  <meta name="description" content="A set of articles published on this site." />
+  <meta name="description" content="A set of articles published on this site."
+  />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="HandheldFriendly" content="true" />
   <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui" />
+  <meta name="viewport"
+  content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"
+  />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="mobile-web-app-capable" content="yes" />
-  <link rel="icon" type="image/png" href="/images/icon16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../images/icon16.png"
+  sizes="16x16" />
+  <link rel="icon" type="image/png" href="../images/icon32.png"
+  sizes="32x32" />
 
-  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"
+  />
+  <link rel="stylesheet" media="all" href="../css/main.css" />
 </head>
 <body>
 
 <header class="expanded row collapse">
   <div class="row">
     <div id="logo">
-      <img src="/images/logo.png" alt="Artisan Maker" />
+      <img src="../images/logo.png" alt="Artisan Maker" />
     </div>
     <div class="large-12 columns">
       <!-- main navigation -->
@@ -34,19 +40,19 @@
       
       <div  id="menu">
       
-                <a href="/">Home</a>
+                <a href="../">Home</a>
       
       
-                <a href="/about/">About</a>
+                <a href="../about/">About</a>
       
       
-                <a href="/product/">Products</a>
+                <a href="../product/">Products</a>
       
       
-                <a href="/blog/" class="active">Blog</a>
+                <a href="../blog/" class="active">Blog</a>
       
       
-                <a href="/contact/">Contact</a>
+                <a href="../contact/">Contact</a>
       
       
       </div>
@@ -74,7 +80,7 @@
 						<ul class="pagelist">
 					
 							<li>
-								<a href="/blog/usage/">
+								<a href="../blog/usage/">
 					
 									<h2>Usage options</h2>
 									<p class="bloginfo">14 March 2016</p>
@@ -83,7 +89,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/blog/gotchas/">
+								<a href="../blog/gotchas/">
 					
 									<h2>Gotchas</h2>
 									<p class="bloginfo">10 March 2016</p>
@@ -92,7 +98,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/blog/gulp/">
+								<a href="../blog/gulp/">
 					
 									<h2>Gulp</h2>
 									<p class="bloginfo">2 March 2016</p>
@@ -101,7 +107,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/blog/future/">
+								<a href="../blog/future/">
 					
 									<h2>Future publication</h2>
 									<p class="bloginfo">1 March 2016</p>
@@ -121,16 +127,16 @@
 					<ul>
 			
 						<li>
-							<a href="/blog/usage/">Usage options</a>
+							<a href="../blog/usage/">Usage options</a>
 						</li>
 						<li>
-							<a href="/blog/gotchas/">Gotchas</a>
+							<a href="../blog/gotchas/">Gotchas</a>
 						</li>
 						<li>
-							<a href="/blog/gulp/">Gulp</a>
+							<a href="../blog/gulp/">Gulp</a>
 						</li>
 						<li>
-							<a href="/blog/future/">Future publication</a>
+							<a href="../blog/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -170,31 +176,37 @@
 
 </body>
 </html>
-]]></description><link>https://rawgit.com/blog</link><guid isPermaLink="true">https://rawgit.com/blog</guid><pubDate>Sat, 17 Feb 2018 14:16:33 GMT</pubDate></item><item><title><![CDATA[Usage options]]></title><description><![CDATA[<!DOCTYPE html>
+]]></description><link>https://rawgit.com/blog</link><guid isPermaLink="true">https://rawgit.com/blog</guid><pubDate>Sat, 17 Feb 2018 14:25:30 GMT</pubDate></item><item><title><![CDATA[Usage options]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
   <title>Usage options - Artisan Maker</title>
-  <meta name="description" content="What type of project could benefit from Metalsmith?" />
+  <meta name="description" content="What type of project could benefit from Metalsmith?"
+  />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="HandheldFriendly" content="true" />
   <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui" />
+  <meta name="viewport"
+  content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"
+  />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="mobile-web-app-capable" content="yes" />
-  <link rel="icon" type="image/png" href="/images/icon16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../../images/icon16.png"
+  sizes="16x16" />
+  <link rel="icon" type="image/png" href="../../images/icon32.png"
+  sizes="32x32" />
 
-  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"
+  />
+  <link rel="stylesheet" media="all" href="../../css/main.css" />
 </head>
 <body>
 
 <header class="expanded row collapse">
   <div class="row">
     <div id="logo">
-      <img src="/images/logo.png" alt="Artisan Maker" />
+      <img src="../../images/logo.png" alt="Artisan Maker" />
     </div>
     <div class="large-12 columns">
       <!-- main navigation -->
@@ -205,19 +217,19 @@
       
       <div  id="menu">
       
-                <a href="/">Home</a>
+                <a href="../../">Home</a>
       
       
-                <a href="/about/">About</a>
+                <a href="../../about/">About</a>
       
       
-                <a href="/product/">Products</a>
+                <a href="../../product/">Products</a>
       
       
-                <a href="/blog/" class="active">Blog</a>
+                <a href="../../blog/" class="active">Blog</a>
       
       
-                <a href="/contact/">Contact</a>
+                <a href="../../contact/">Contact</a>
       
       
       </div>
@@ -256,9 +268,9 @@
 					<nav class="nav page">
 						<ul>
 
-							<li><a href="/blog/" class="back">&laquo; back: Blog</a></li></p>
+							<li><a href="../../blog/" class="back">&laquo; back: Blog</a></li></p>
 
-							<li><a href="/blog/gotchas/" class="next">next: Gotchas &raquo;</a></li></p>
+							<li><a href="../../blog/gotchas/" class="next">next: Gotchas &raquo;</a></li></p>
 
 						</ul>
 					</nav>
@@ -275,13 +287,13 @@
 							<strong>Usage options</strong>
 						</li>
 						<li>
-							<a href="/blog/gotchas/">Gotchas</a>
+							<a href="../../blog/gotchas/">Gotchas</a>
 						</li>
 						<li>
-							<a href="/blog/gulp/">Gulp</a>
+							<a href="../../blog/gulp/">Gulp</a>
 						</li>
 						<li>
-							<a href="/blog/future/">Future publication</a>
+							<a href="../../blog/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -326,26 +338,32 @@
 <head>
   <meta charset="utf-8" />
   <title>Gotchas - Artisan Maker</title>
-  <meta name="description" content="Issues and workarounds when using Metalsmith." />
+  <meta name="description" content="Issues and workarounds when using Metalsmith."
+  />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="HandheldFriendly" content="true" />
   <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui" />
+  <meta name="viewport"
+  content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"
+  />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="mobile-web-app-capable" content="yes" />
-  <link rel="icon" type="image/png" href="/images/icon16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../../images/icon16.png"
+  sizes="16x16" />
+  <link rel="icon" type="image/png" href="../../images/icon32.png"
+  sizes="32x32" />
 
-  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"
+  />
+  <link rel="stylesheet" media="all" href="../../css/main.css" />
 </head>
 <body>
 
 <header class="expanded row collapse">
   <div class="row">
     <div id="logo">
-      <img src="/images/logo.png" alt="Artisan Maker" />
+      <img src="../../images/logo.png" alt="Artisan Maker" />
     </div>
     <div class="large-12 columns">
       <!-- main navigation -->
@@ -356,19 +374,19 @@
       
       <div  id="menu">
       
-                <a href="/">Home</a>
+                <a href="../../">Home</a>
       
       
-                <a href="/about/">About</a>
+                <a href="../../about/">About</a>
       
       
-                <a href="/product/">Products</a>
+                <a href="../../product/">Products</a>
       
       
-                <a href="/blog/" class="active">Blog</a>
+                <a href="../../blog/" class="active">Blog</a>
       
       
-                <a href="/contact/">Contact</a>
+                <a href="../../contact/">Contact</a>
       
       
       </div>
@@ -406,9 +424,9 @@
 					<nav class="nav page">
 						<ul>
 
-							<li><a href="/blog/usage/" class="back">&laquo; back: Usage options</a></li></p>
+							<li><a href="../../blog/usage/" class="back">&laquo; back: Usage options</a></li></p>
 
-							<li><a href="/blog/gulp/" class="next">next: Gulp &raquo;</a></li></p>
+							<li><a href="../../blog/gulp/" class="next">next: Gulp &raquo;</a></li></p>
 
 						</ul>
 					</nav>
@@ -422,16 +440,16 @@
 					<ul>
 			
 						<li>
-							<a href="/blog/usage/">Usage options</a>
+							<a href="../../blog/usage/">Usage options</a>
 						</li>
 						<li>
 							<strong>Gotchas</strong>
 						</li>
 						<li>
-							<a href="/blog/gulp/">Gulp</a>
+							<a href="../../blog/gulp/">Gulp</a>
 						</li>
 						<li>
-							<a href="/blog/future/">Future publication</a>
+							<a href="../../blog/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -476,26 +494,32 @@
 <head>
   <meta charset="utf-8" />
   <title>Gulp - Artisan Maker</title>
-  <meta name="description" content="Do you need Gulp? Can it be integrated with Metalsmith?" />
+  <meta name="description" content="Do you need Gulp? Can it be integrated with Metalsmith?"
+  />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="HandheldFriendly" content="true" />
   <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui" />
+  <meta name="viewport"
+  content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"
+  />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="mobile-web-app-capable" content="yes" />
-  <link rel="icon" type="image/png" href="/images/icon16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../../images/icon16.png"
+  sizes="16x16" />
+  <link rel="icon" type="image/png" href="../../images/icon32.png"
+  sizes="32x32" />
 
-  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"
+  />
+  <link rel="stylesheet" media="all" href="../../css/main.css" />
 </head>
 <body>
 
 <header class="expanded row collapse">
   <div class="row">
     <div id="logo">
-      <img src="/images/logo.png" alt="Artisan Maker" />
+      <img src="../../images/logo.png" alt="Artisan Maker" />
     </div>
     <div class="large-12 columns">
       <!-- main navigation -->
@@ -506,19 +530,19 @@
       
       <div  id="menu">
       
-                <a href="/">Home</a>
+                <a href="../../">Home</a>
       
       
-                <a href="/about/">About</a>
+                <a href="../../about/">About</a>
       
       
-                <a href="/product/">Products</a>
+                <a href="../../product/">Products</a>
       
       
-                <a href="/blog/" class="active">Blog</a>
+                <a href="../../blog/" class="active">Blog</a>
       
       
-                <a href="/contact/">Contact</a>
+                <a href="../../contact/">Contact</a>
       
       
       </div>
@@ -574,9 +598,9 @@ gulp.task(&#39;html&#39;, function() {
 					<nav class="nav page">
 						<ul>
 
-							<li><a href="/blog/gotchas/" class="back">&laquo; back: Gotchas</a></li></p>
+							<li><a href="../../blog/gotchas/" class="back">&laquo; back: Gotchas</a></li></p>
 
-							<li><a href="/blog/future/" class="next">next: Future publication &raquo;</a></li></p>
+							<li><a href="../../blog/future/" class="next">next: Future publication &raquo;</a></li></p>
 
 						</ul>
 					</nav>
@@ -590,16 +614,16 @@ gulp.task(&#39;html&#39;, function() {
 					<ul>
 			
 						<li>
-							<a href="/blog/usage/">Usage options</a>
+							<a href="../../blog/usage/">Usage options</a>
 						</li>
 						<li>
-							<a href="/blog/gotchas/">Gotchas</a>
+							<a href="../../blog/gotchas/">Gotchas</a>
 						</li>
 						<li>
 							<strong>Gulp</strong>
 						</li>
 						<li>
-							<a href="/blog/future/">Future publication</a>
+							<a href="../../blog/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -644,26 +668,32 @@ gulp.task(&#39;html&#39;, function() {
 <head>
   <meta charset="utf-8" />
   <title>Future publication - Artisan Maker</title>
-  <meta name="description" content="This article will be published after 1 March, 2016." />
+  <meta name="description" content="This article will be published after 1 March, 2016."
+  />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="HandheldFriendly" content="true" />
   <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui" />
+  <meta name="viewport"
+  content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"
+  />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="mobile-web-app-capable" content="yes" />
-  <link rel="icon" type="image/png" href="/images/icon16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../../images/icon16.png"
+  sizes="16x16" />
+  <link rel="icon" type="image/png" href="../../images/icon32.png"
+  sizes="32x32" />
 
-  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"
+  />
+  <link rel="stylesheet" media="all" href="../../css/main.css" />
 </head>
 <body>
 
 <header class="expanded row collapse">
   <div class="row">
     <div id="logo">
-      <img src="/images/logo.png" alt="Artisan Maker" />
+      <img src="../../images/logo.png" alt="Artisan Maker" />
     </div>
     <div class="large-12 columns">
       <!-- main navigation -->
@@ -674,19 +704,19 @@ gulp.task(&#39;html&#39;, function() {
       
       <div  id="menu">
       
-                <a href="/">Home</a>
+                <a href="../../">Home</a>
       
       
-                <a href="/about/">About</a>
+                <a href="../../about/">About</a>
       
       
-                <a href="/product/">Products</a>
+                <a href="../../product/">Products</a>
       
       
-                <a href="/blog/" class="active">Blog</a>
+                <a href="../../blog/" class="active">Blog</a>
       
       
-                <a href="/contact/">Contact</a>
+                <a href="../../contact/">Contact</a>
       
       
       </div>
@@ -717,7 +747,7 @@ gulp.task(&#39;html&#39;, function() {
 					<nav class="nav page">
 						<ul>
 
-							<li><a href="/blog/gulp/" class="back">&laquo; back: Gulp</a></li></p>
+							<li><a href="../../blog/gulp/" class="back">&laquo; back: Gulp</a></li></p>
 
 
 						</ul>
@@ -732,13 +762,13 @@ gulp.task(&#39;html&#39;, function() {
 					<ul>
 			
 						<li>
-							<a href="/blog/usage/">Usage options</a>
+							<a href="../../blog/usage/">Usage options</a>
 						</li>
 						<li>
-							<a href="/blog/gotchas/">Gotchas</a>
+							<a href="../../blog/gotchas/">Gotchas</a>
 						</li>
 						<li>
-							<a href="/blog/gulp/">Gulp</a>
+							<a href="../../blog/gulp/">Gulp</a>
 						</li>
 						<li>
 							<strong>Future publication</strong>
