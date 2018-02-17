@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 17 Feb 2018 11:02:22 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>https://rawgit.com/</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 17 Feb 2018 13:59:31 GMT</lastBuildDate><atom:link href="https://rawgit.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
 
   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="../css/main.css" />
+  <link rel="stylesheet" media="all" href="/css/main.css" />
 </head>
 <body>
 
@@ -34,19 +34,19 @@
       
       <div  id="menu">
       
-                <a href="../">Home</a>
+                <a href="/">Home</a>
       
       
-                <a href="../about/">About</a>
+                <a href="/about/">About</a>
       
       
-                <a href="../product/">Products</a>
+                <a href="/product/">Products</a>
       
       
-                <a href="../blog/" class="active">Blog</a>
+                <a href="/blog/" class="active">Blog</a>
       
       
-                <a href="../contact/">Contact</a>
+                <a href="/contact/">Contact</a>
       
       
       </div>
@@ -74,7 +74,7 @@
 						<ul class="pagelist">
 					
 							<li>
-								<a href="../blog/usage/">
+								<a href="/blog/usage/">
 					
 									<h2>Usage options</h2>
 									<p class="bloginfo">14 March 2016</p>
@@ -83,7 +83,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="../blog/gotchas/">
+								<a href="/blog/gotchas/">
 					
 									<h2>Gotchas</h2>
 									<p class="bloginfo">10 March 2016</p>
@@ -92,7 +92,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="../blog/gulp/">
+								<a href="/blog/gulp/">
 					
 									<h2>Gulp</h2>
 									<p class="bloginfo">2 March 2016</p>
@@ -101,7 +101,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="../blog/future/">
+								<a href="/blog/future/">
 					
 									<h2>Future publication</h2>
 									<p class="bloginfo">1 March 2016</p>
@@ -121,16 +121,16 @@
 					<ul>
 			
 						<li>
-							<a href="../blog/usage/">Usage options</a>
+							<a href="/blog/usage/">Usage options</a>
 						</li>
 						<li>
-							<a href="../blog/gotchas/">Gotchas</a>
+							<a href="/blog/gotchas/">Gotchas</a>
 						</li>
 						<li>
-							<a href="../blog/gulp/">Gulp</a>
+							<a href="/blog/gulp/">Gulp</a>
 						</li>
 						<li>
-							<a href="../blog/future/">Future publication</a>
+							<a href="/blog/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -170,7 +170,7 @@
 
 </body>
 </html>
-]]></description><link>http://127.0.0.1/blog</link><guid isPermaLink="true">http://127.0.0.1/blog</guid><pubDate>Wed, 27 Sep 2017 17:12:37 GMT</pubDate></item><item><title><![CDATA[Usage options]]></title><description><![CDATA[<!DOCTYPE html>
+]]></description><link>https://rawgit.com/blog</link><guid isPermaLink="true">https://rawgit.com/blog</guid><pubDate>Sat, 17 Feb 2018 13:51:02 GMT</pubDate></item><item><title><![CDATA[Usage options]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -187,7 +187,7 @@
   <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
 
   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="../../css/main.css" />
+  <link rel="stylesheet" media="all" href="/css/main.css" />
 </head>
 <body>
 
@@ -205,19 +205,19 @@
       
       <div  id="menu">
       
-                <a href="../../">Home</a>
+                <a href="/">Home</a>
       
       
-                <a href="../../about/">About</a>
+                <a href="/about/">About</a>
       
       
-                <a href="../../product/">Products</a>
+                <a href="/product/">Products</a>
       
       
-                <a href="../../blog/" class="active">Blog</a>
+                <a href="/blog/" class="active">Blog</a>
       
       
-                <a href="../../contact/">Contact</a>
+                <a href="/contact/">Contact</a>
       
       
       </div>
@@ -256,9 +256,9 @@
 					<nav class="nav page">
 						<ul>
 
-							<li><a href="../../blog/" class="back">&laquo; back: Blog</a></li></p>
+							<li><a href="/blog/" class="back">&laquo; back: Blog</a></li></p>
 
-							<li><a href="../../blog/gotchas/" class="next">next: Gotchas &raquo;</a></li></p>
+							<li><a href="/blog/gotchas/" class="next">next: Gotchas &raquo;</a></li></p>
 
 						</ul>
 					</nav>
@@ -275,13 +275,13 @@
 							<strong>Usage options</strong>
 						</li>
 						<li>
-							<a href="../../blog/gotchas/">Gotchas</a>
+							<a href="/blog/gotchas/">Gotchas</a>
 						</li>
 						<li>
-							<a href="../../blog/gulp/">Gulp</a>
+							<a href="/blog/gulp/">Gulp</a>
 						</li>
 						<li>
-							<a href="../../blog/future/">Future publication</a>
+							<a href="/blog/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -321,7 +321,7 @@
 
 </body>
 </html>
-]]></description><link>http://127.0.0.1/blog/usage</link><guid isPermaLink="true">http://127.0.0.1/blog/usage</guid><pubDate>Mon, 14 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gotchas]]></title><description><![CDATA[<!DOCTYPE html>
+]]></description><link>https://rawgit.com/blog/usage</link><guid isPermaLink="true">https://rawgit.com/blog/usage</guid><pubDate>Mon, 14 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gotchas]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -338,7 +338,7 @@
   <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
 
   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="../../css/main.css" />
+  <link rel="stylesheet" media="all" href="/css/main.css" />
 </head>
 <body>
 
@@ -356,19 +356,19 @@
       
       <div  id="menu">
       
-                <a href="../../">Home</a>
+                <a href="/">Home</a>
       
       
-                <a href="../../about/">About</a>
+                <a href="/about/">About</a>
       
       
-                <a href="../../product/">Products</a>
+                <a href="/product/">Products</a>
       
       
-                <a href="../../blog/" class="active">Blog</a>
+                <a href="/blog/" class="active">Blog</a>
       
       
-                <a href="../../contact/">Contact</a>
+                <a href="/contact/">Contact</a>
       
       
       </div>
@@ -406,9 +406,9 @@
 					<nav class="nav page">
 						<ul>
 
-							<li><a href="../../blog/usage/" class="back">&laquo; back: Usage options</a></li></p>
+							<li><a href="/blog/usage/" class="back">&laquo; back: Usage options</a></li></p>
 
-							<li><a href="../../blog/gulp/" class="next">next: Gulp &raquo;</a></li></p>
+							<li><a href="/blog/gulp/" class="next">next: Gulp &raquo;</a></li></p>
 
 						</ul>
 					</nav>
@@ -422,16 +422,16 @@
 					<ul>
 			
 						<li>
-							<a href="../../blog/usage/">Usage options</a>
+							<a href="/blog/usage/">Usage options</a>
 						</li>
 						<li>
 							<strong>Gotchas</strong>
 						</li>
 						<li>
-							<a href="../../blog/gulp/">Gulp</a>
+							<a href="/blog/gulp/">Gulp</a>
 						</li>
 						<li>
-							<a href="../../blog/future/">Future publication</a>
+							<a href="/blog/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -471,7 +471,7 @@
 
 </body>
 </html>
-]]></description><link>http://127.0.0.1/blog/gotchas</link><guid isPermaLink="true">http://127.0.0.1/blog/gotchas</guid><pubDate>Thu, 10 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gulp]]></title><description><![CDATA[<!DOCTYPE html>
+]]></description><link>https://rawgit.com/blog/gotchas</link><guid isPermaLink="true">https://rawgit.com/blog/gotchas</guid><pubDate>Thu, 10 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gulp]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -488,7 +488,7 @@
   <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
 
   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="../../css/main.css" />
+  <link rel="stylesheet" media="all" href="/css/main.css" />
 </head>
 <body>
 
@@ -506,19 +506,19 @@
       
       <div  id="menu">
       
-                <a href="../../">Home</a>
+                <a href="/">Home</a>
       
       
-                <a href="../../about/">About</a>
+                <a href="/about/">About</a>
       
       
-                <a href="../../product/">Products</a>
+                <a href="/product/">Products</a>
       
       
-                <a href="../../blog/" class="active">Blog</a>
+                <a href="/blog/" class="active">Blog</a>
       
       
-                <a href="../../contact/">Contact</a>
+                <a href="/contact/">Contact</a>
       
       
       </div>
@@ -574,9 +574,9 @@ gulp.task(&#39;html&#39;, function() {
 					<nav class="nav page">
 						<ul>
 
-							<li><a href="../../blog/gotchas/" class="back">&laquo; back: Gotchas</a></li></p>
+							<li><a href="/blog/gotchas/" class="back">&laquo; back: Gotchas</a></li></p>
 
-							<li><a href="../../blog/future/" class="next">next: Future publication &raquo;</a></li></p>
+							<li><a href="/blog/future/" class="next">next: Future publication &raquo;</a></li></p>
 
 						</ul>
 					</nav>
@@ -590,16 +590,16 @@ gulp.task(&#39;html&#39;, function() {
 					<ul>
 			
 						<li>
-							<a href="../../blog/usage/">Usage options</a>
+							<a href="/blog/usage/">Usage options</a>
 						</li>
 						<li>
-							<a href="../../blog/gotchas/">Gotchas</a>
+							<a href="/blog/gotchas/">Gotchas</a>
 						</li>
 						<li>
 							<strong>Gulp</strong>
 						</li>
 						<li>
-							<a href="../../blog/future/">Future publication</a>
+							<a href="/blog/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -639,7 +639,7 @@ gulp.task(&#39;html&#39;, function() {
 
 </body>
 </html>
-]]></description><link>http://127.0.0.1/blog/gulp</link><guid isPermaLink="true">http://127.0.0.1/blog/gulp</guid><pubDate>Wed, 02 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Future publication]]></title><description><![CDATA[<!DOCTYPE html>
+]]></description><link>https://rawgit.com/blog/gulp</link><guid isPermaLink="true">https://rawgit.com/blog/gulp</guid><pubDate>Wed, 02 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Future publication]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -656,7 +656,7 @@ gulp.task(&#39;html&#39;, function() {
   <link rel="icon" type="image/png" href="/images/icon32.png" sizes="32x32" />
 
   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
-  <link rel="stylesheet" media="all" href="../../css/main.css" />
+  <link rel="stylesheet" media="all" href="/css/main.css" />
 </head>
 <body>
 
@@ -674,19 +674,19 @@ gulp.task(&#39;html&#39;, function() {
       
       <div  id="menu">
       
-                <a href="../../">Home</a>
+                <a href="/">Home</a>
       
       
-                <a href="../../about/">About</a>
+                <a href="/about/">About</a>
       
       
-                <a href="../../product/">Products</a>
+                <a href="/product/">Products</a>
       
       
-                <a href="../../blog/" class="active">Blog</a>
+                <a href="/blog/" class="active">Blog</a>
       
       
-                <a href="../../contact/">Contact</a>
+                <a href="/contact/">Contact</a>
       
       
       </div>
@@ -717,7 +717,7 @@ gulp.task(&#39;html&#39;, function() {
 					<nav class="nav page">
 						<ul>
 
-							<li><a href="../../blog/gulp/" class="back">&laquo; back: Gulp</a></li></p>
+							<li><a href="/blog/gulp/" class="back">&laquo; back: Gulp</a></li></p>
 
 
 						</ul>
@@ -732,13 +732,13 @@ gulp.task(&#39;html&#39;, function() {
 					<ul>
 			
 						<li>
-							<a href="../../blog/usage/">Usage options</a>
+							<a href="/blog/usage/">Usage options</a>
 						</li>
 						<li>
-							<a href="../../blog/gotchas/">Gotchas</a>
+							<a href="/blog/gotchas/">Gotchas</a>
 						</li>
 						<li>
-							<a href="../../blog/gulp/">Gulp</a>
+							<a href="/blog/gulp/">Gulp</a>
 						</li>
 						<li>
 							<strong>Future publication</strong>
@@ -781,4 +781,4 @@ gulp.task(&#39;html&#39;, function() {
 
 </body>
 </html>
-]]></description><link>http://127.0.0.1/blog/future</link><guid isPermaLink="true">http://127.0.0.1/blog/future</guid><pubDate>Tue, 01 Mar 2016 00:00:00 GMT</pubDate></item></channel></rss>
+]]></description><link>https://rawgit.com/blog/future</link><guid isPermaLink="true">https://rawgit.com/blog/future</guid><pubDate>Tue, 01 Mar 2016 00:00:00 GMT</pubDate></item></channel></rss>
