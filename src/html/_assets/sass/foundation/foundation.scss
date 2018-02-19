@@ -64,6 +64,9 @@
 @import 'components/thumbnail';
 @import 'components/tooltip';
 
+
+@import 'addon/blog';
+
 @mixin foundation-everything($flex: false) {
   @if $flex {
     $global-flexbox: true !global;

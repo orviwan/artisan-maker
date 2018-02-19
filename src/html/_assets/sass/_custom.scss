@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   border-bottom: solid 1px #efefef;
   color: #084C61;
-  margin-top: 1.5em;
+  margin-top: 0;
 }
 
 article {
@@ -99,7 +99,7 @@ footer {
   font-family: 'Bitter', serif;
   .row-footer01 {
     background-color: #323031;
-    padding: 80px 0;
+    padding: 40px 0;
     font-size: 18px;
   }
   .row-footer02 {
@@ -109,6 +109,7 @@ footer {
   }
   a, a:hover, a:visited, a:active {
     color: #FFC857;
+    font-size: .9em;
     &:hover {
       text-decoration: underline;
     }
@@ -146,12 +147,16 @@ label {
   font-size: 18px;
 }
 .button {
+  &:visited {
+    color: #fff;
+  }
   background-color: #DB3A34;
   font-weight: bold;
   font-family: 'Bitter', serif;
   font-size: 18px;
   border-radius: 10px;
   border: #084C61 solid 1px;
+  color: #fff;
   &:hover {
     background-color: #FFC857;
     color: #DB3A34

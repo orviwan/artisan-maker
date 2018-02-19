@@ -4,12 +4,9 @@
   <div class="title-bar-title">Menu</div>
 </div>
 
-<div  id="menu">
-      {{#each navmain}}
-
-          <a href="{{path}}"{{#if active}} class="active"{{/if}}>{{menuTitle}}</a>
-
-      {{/each}}
-
+<div id="menu">
+  {{#each navmain}}
+    <a href="{{path}}"{{#if active}} class="active"{{/if}}>{{menuTitle}}</a>
+  {{/each}}
 </div>
 

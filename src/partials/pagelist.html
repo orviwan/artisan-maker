@@ -1,19 +1,34 @@
+
+
 {{#if navsub}}
-	<ul class="pagelist">
 
 	{{#each navsub}}
-		<li>
-			<a href="{{ path }}">
 
-				<h2>{{ title }}</h2>
-				<p class="bloginfo">{{ dateFormat }}</p>
+			<div class="responsive-blog-post row">
+				<div class="individual-post">
+					<a href="{{ path }}"><h4>{{ title }}</h4></a><br />
+					{{#compare ../template 'blog' operator="=="}}
+						<p class="articleinfo">Published {{ dateFormat }}</p>
+					{{/compare}}
 
-				{{#if description}}
-					<p>{{ description }}</p>
-				{{/if}}
-			</a>
-		</li>
+					{{#if image}}
+						<a href="{{ path }}">
+							<img src="{{ ../root }}{{ image }}" width="50%" class="float-left" style="margin-right:30px;" />
+						</a>
+					{{/if}}
+					{{#if description}}
+						<p>{{ description }}</p>
+					{{/if}}
+					
+					{{#compare ../template 'blog' operator="=="}}
+					<a class="button" href="{{ path }}">Read More</a>
+					{{/compare}}
+					{{#compare ../template 'product' operator="=="}}
+					<a class="button" href="{{ path }}">Product Details</a>
+					{{/compare}}
+				</div>
+			</div>
+
 	{{/each}}
 
-	</ul>
 {{/if}}

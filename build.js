@@ -82,6 +82,12 @@ var ms = metalsmith(dir.base)
       reverse: true,
       refer: false
     },
+    legal: {
+      pattern: '**/legal/*',
+      sortBy: 'priority',
+      reverse: false,
+      refer: false
+    },
     blog: {
       pattern: 'blog/**/*',
       sortBy: 'date',
@@ -92,8 +98,8 @@ var ms = metalsmith(dir.base)
         layout: 'blog.html'
       }
     },
-    product: {
-      pattern: 'product/**/*',
+    products: {
+      pattern: 'products/**/*',
       sortBy: 'priority',
       reverse: false,
       refer: true,

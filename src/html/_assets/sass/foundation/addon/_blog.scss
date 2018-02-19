@@ -1,0 +1,38 @@
+
+$responsive-blog-post-vert-seperate: 4rem;
+
+.responsive-blog-post {
+  margin-bottom: $responsive-blog-post-vert-seperate;
+
+  p {
+    color: $dark-gray;
+  }
+
+
+  .individual-post {
+    margin-bottom: $responsive-blog-post-vert-seperate;
+  }
+
+  h4 {
+    margin-bottom: 0;
+
+    &:hover {
+      text-decoration: underline;
+      transition: color 0.3s ease-in;
+    }
+
+    @media screen and (max-width: 39.9375em) {
+      font-size: 1.5rem;
+    }
+  }
+
+  img {
+    margin-bottom: 1.5rem;
+  }
+
+  .date {
+    font-size: 0.8rem;
+    color: $dark-gray;
+  }
+}
+

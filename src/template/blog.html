@@ -10,7 +10,7 @@
 
 <main class="{{#if navsub}}subpages{{/if}} row">
 
-  <div class="large-12 columns">
+  <div class="large-8 large-offset-2 columns">
 
 		<div class="content">
 
@@ -21,7 +21,11 @@
 				{{#if isPage}}
 				{{else}}
 
-					<p class="bloginfo">Published {{ dateFormat }}, {{ wordCount }} words, {{ readingTime }}-minute read</p>
+					{{#if image}}
+						<img src="{{ root }}{{ image }}" />
+					{{/if}}
+
+					<p class="bloginfo">Published {{ dateFormat }}</p>
 
 				{{/if}}
 
@@ -29,7 +33,7 @@
 
 				{{#if isPage}}
 
-					{{> pagelist }}
+					{{> pagelist template='blog' }}
 
 				{{else}}
 
@@ -50,8 +54,6 @@
 				{{/if}}
 
 				</article>
-
-			{{> navsub }}
 
 		</div>
 	</div>

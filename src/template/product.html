@@ -9,17 +9,37 @@
 
 <main class="{{#if navsub}}subpages{{/if}} row">
 	
-	<div class="large-12 columns">
+	<div class="large-8 large-offset-2 columns">
 		<div class="content">
 
 			<article>
 
-				<h1>PRODUCT {{ title }}</h1>
+				<h1>{{ title }}</h1>
 
 				{{#if isPage}}
 				{{else}}
 
-					<p class="info">Published {{ dateFormat }}, {{ wordCount }} words, {{ readingTime }}-minute read</p>
+					{{#if image}}
+						<img src="{{ root }}{{ image }}" />
+					{{/if}}
+					<p>&nbsp;{{formatCurrency price }}</p>
+					<form action="http://www.mirz.com/artisan/payment.php" method="POST">
+						<script
+							src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+							data-key="pk_test_F2BBVuAa4jIxr3gLKk5bv9Cj"
+							data-amount="{{formatStripe price }}"
+							data-name="Artisan Maker"
+							data-description="{{ title }}"
+							data-image="{{ root }}images/bev.jpg"
+							data-locale="auto"
+							data-currency="gbp">
+						</script>
+						<input type="hidden" name="amount" value="{{formatStripe price }}" />
+
+						<input type="hidden" name="description" value="{{ title }}" />
+					</form>
+
+
 
 				{{/if}}
 
@@ -27,7 +47,7 @@
 
 				{{#if isPage}}
 
-					{{> pagelist }}
+					{{> pagelist template='product' }}
 
 				{{else}}
 
@@ -49,7 +69,7 @@
 
 				</article>
 
-			{{> navsub }}
+		
 
 		</div>
 	</div>

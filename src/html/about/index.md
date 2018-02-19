@@ -1,10 +1,13 @@
 ---
 title: About me
 menuTitle: About
-description: A static HTML-only website generated using Metalsmith.io.
+description: About Bev Rowe, Artisan Maker.
 priority: 0.9
 ---
 
+<div style="float:left;margin-right:20px">
+![Bev Rowe]({{ root }}images/bev.jpg "Bev Rowe")
+</div>
 
 When I was younger I used to thatch roofs ad when I came off a roof, once
 completed, I was full of all the difficulties the roof had presented. Perhaps a
@@ -22,3 +25,5 @@ it sensibly.
 
 Each of my jewellery pieces is designed and hand crafted by me. Each is unique
 and I take care to describe each in detail, as none are the same.
+
+Why not take a look at some of my [hand crafted products]({{ root }}products/).

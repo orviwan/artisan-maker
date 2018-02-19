@@ -1,5 +1,7 @@
 ---
 title: Some product
 description: Blah
-priority: 1
+price: 9.90
+image: "../images/cactus.jpg"
 ---
+
