@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 19 Feb 2018 13:50:43 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 21 Feb 2018 10:28:04 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -52,7 +52,7 @@
 
 <main class="subpages row">
 
-  <div class="large-8 large-offset-2 columns">
+  <div class="large-10 large-offset-1 columns">
 
 		<div class="content">
 
@@ -70,14 +70,14 @@
 					
 					
 								<div class="responsive-blog-post row">
-									<div class="individual-post">
+									<div class="individual-post column">
 										<a href="../blog/instagram/"><h4>I&#x27;m now on Instagram</h4></a><br />
 											<p class="articleinfo">Published 22 January 2018</p>
 					
 											<a href="../blog/instagram/">
 												<img src="../images/instagram.jpg" width="50%" class="float-left" style="margin-right:30px;" />
 											</a>
-											<p>I am now regularly publishing photos on Instagram.</p>
+											<p>I am now regularly publishing photos of my work on Instagram.</p>
 										
 										<a class="button" href="../blog/instagram/">Read More</a>
 									</div>
@@ -95,7 +95,7 @@
 <footer class="clearfix">
   <div class="row expanded row-footer01">
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-10 large-offset-1 columns">
           <ul class="vertical medium-horizontal menu">
             <li><a href="https://www.instagram.com/artisan_maker/"
             target="_blank">Instagram</a></li>
@@ -103,7 +103,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-10 large-offset-1 columns">
           <ul class="vertical medium-horizontal menu">
             <li><a href="../legal/cookies/">Website Cookies</a></li>
             <li><a href="../legal/ecommerce-terms/">E-Commerce Terms and
@@ -118,7 +118,7 @@
   </div>
   <div class="row expanded row-footer02">
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-10 large-offset-1 columns">
         <p>Copyright 2018. Artisan Maker, Devon.</p>
       </div>
     </div>
@@ -138,7 +138,7 @@
 <head>
   <meta charset="utf-8" />
   <title>I&#x27;m now on Instagram - Artisan Maker</title>
-  <meta name="description" content="I am now regularly publishing photos on Instagram."
+  <meta name="description" content="I am now regularly publishing photos of my work on Instagram."
   />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="HandheldFriendly" content="true" />
@@ -186,7 +186,7 @@
 
 <main class="subpages row">
 
-  <div class="large-8 large-offset-2 columns">
+  <div class="large-10 large-offset-1 columns">
 
 		<div class="content">
 
@@ -225,7 +225,7 @@ there to keep up to date on my latest projects.</p>
 <footer class="clearfix">
   <div class="row expanded row-footer01">
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-10 large-offset-1 columns">
           <ul class="vertical medium-horizontal menu">
             <li><a href="https://www.instagram.com/artisan_maker/"
             target="_blank">Instagram</a></li>
@@ -233,7 +233,7 @@ there to keep up to date on my latest projects.</p>
       </div>
     </div>
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-10 large-offset-1 columns">
           <ul class="vertical medium-horizontal menu">
             <li><a href="../../legal/cookies/">Website Cookies</a></li>
             <li><a href="../../legal/ecommerce-terms/">E-Commerce Terms and
@@ -248,7 +248,7 @@ there to keep up to date on my latest projects.</p>
   </div>
   <div class="row expanded row-footer02">
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-10 large-offset-1 columns">
         <p>Copyright 2018. Artisan Maker, Devon.</p>
       </div>
     </div>
