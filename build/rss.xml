@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 21 Feb 2018 10:28:04 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artisan Maker]]></title><description><![CDATA[A demonstration static site built using Metalsmith]]></description><link>https://orviwan.github.io/artisan-maker</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 21 Feb 2018 10:49:42 GMT</lastBuildDate><atom:link href="https://orviwan.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Blog]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -133,7 +133,7 @@
 
 </body>
 </html>
-]]></description><link>http://127.0.0.1/blog</link><guid isPermaLink="true">http://127.0.0.1/blog</guid><pubDate>Sat, 17 Feb 2018 14:35:07 GMT</pubDate></item><item><title><![CDATA[I'm now on Instagram]]></title><description><![CDATA[<!DOCTYPE html>
+]]></description><link>https://orviwan.github.io/blog</link><guid isPermaLink="true">https://orviwan.github.io/blog</guid><pubDate>Sat, 17 Feb 2018 14:35:07 GMT</pubDate></item><item><title><![CDATA[I'm now on Instagram]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -263,4 +263,4 @@ there to keep up to date on my latest projects.</p>
 
 </body>
 </html>
-]]></description><link>http://127.0.0.1/blog/instagram</link><guid isPermaLink="true">http://127.0.0.1/blog/instagram</guid><pubDate>Mon, 22 Jan 2018 00:00:00 GMT</pubDate></item></channel></rss>
+]]></description><link>https://orviwan.github.io/blog/instagram</link><guid isPermaLink="true">https://orviwan.github.io/blog/instagram</guid><pubDate>Mon, 22 Jan 2018 00:00:00 GMT</pubDate></item></channel></rss>
