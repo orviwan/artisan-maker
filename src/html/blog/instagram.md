@@ -1,6 +1,6 @@
 ---
 title: I'm now on Instagram
-description: I am now regularly publishing photos on Instagram.
+description: I am now regularly publishing photos of my work on Instagram.
 date: 2018-01-22
 image: "images/instagram.jpg"
 ---
